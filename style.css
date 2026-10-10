@@ -1,0 +1,378 @@
+/* =======================================================
+   RESET & CẤU HÌNH TOÀN TRANG
+   ======================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+/* =======================================================
+   1. HEADER SECTION
+   ======================================================= */
+.site-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid #3b82f6;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+    color: #f8fafc;
+}
+
+.site-title span {
+    color: #38bdf8;
+}
+
+.site-subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+/* =======================================================
+   2. NAVIGATION MENU (Ít nhất 4 mục điều hướng)
+   ======================================================= */
+.site-nav {
+    background-color: #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.nav-link {
+    display: block;
+    padding: 16px 20px;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff;
+    background-color: #3b82f6;
+}
+
+/* =======================================================
+   3. CONTENT SECTION (Bố cục 2 cột: Main + Sidebar)
+   ======================================================= */
+.site-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* 3.1 Main Content Column (Cột Chính 70%) */
+.main-content {
+    flex: 7;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.featured-article .article-tag {
+    display: inline-block;
+    background-color: #e0f2fe;
+    color: #0284c7;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    margin-bottom: 15px;
+}
+
+.featured-article .article-title {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.featured-article .article-meta {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.featured-article .article-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.featured-article .article-body p {
+    font-size: 1.05rem;
+    color: #334155;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.featured-article .read-more-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.featured-article .read-more-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* 3.2 Sidebar Column (Cột Phụ 30%) */
+.sidebar {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.widget {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.widget-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    position: relative;
+}
+
+.widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #3b82f6;
+}
+
+/* Widget: Categories */
+.category-list {
+    list-style: none;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e2e8f0;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+.category-item a:hover {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.category-count {
+    background-color: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* Widget: Trending Post */
+.trending-post {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.trending-thumb {
+    width: 75px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.trending-info h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.trending-info span {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* Widget: Newsletter */
+.newsletter-form input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.newsletter-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f172a;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #1e293b;
+}
+
+/* =======================================================
+   4. FOOTER SECTION
+   ======================================================= */
+.site-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 40px 20px 20px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #334155;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-copyright {
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* =======================================================
+   5. RESPONSIVE DESIGN
+   ======================================================= */
+@media (max-width: 900px) {
+    .content-layout {
+        flex-direction: column;
+    }
+
+    .main-content, .sidebar {
+        width: 100%;
+    }
+
+    .site-title {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 12px;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

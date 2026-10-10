@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài tập Phân tích và Xây dựng Cấu Trúc Website Template chuẩn mực gồm Header, Navigation, Content Section và Footer bằng HTML và CSS.">
+    <title>Tech Insights | Phân Tích & Xây Dựng Cấu Trúc Website Template</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Tách Biệt -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =======================================================
+         1. PHẦN HEADER: Chứa tiêu đề trang và nhận diện thương hiệu
+         ======================================================= -->
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="site-title">TECH <span>INSIGHTS</span> BLOG</h1>
+            <p class="site-subtitle">Nền tảng chia sẻ kiến thức công nghệ, lập trình web và xu hướng kỹ thuật số</p>
+        </div>
+    </header>
+
+    <!-- =======================================================
+         2. PHẦN NAVIGATION MENU: Tối thiểu 4 mục điều hướng
+         ======================================================= -->
+    <nav class="site-nav">
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link active">Trang chủ</a></li>
+                <li class="nav-item"><a href="#news" class="nav-link">Tin công nghệ</a></li>
+                <li class="nav-item"><a href="#coding" class="nav-link">Lập trình &amp; AI</a></li>
+                <li class="nav-item"><a href="#reviews" class="nav-link">Đánh giá sản phẩm</a></li>
+                <li class="nav-item"><a href="#tutorials" class="nav-link">Hướng dẫn</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- =======================================================
+         3. PHẦN CONTENT SECTION: Bài viết chính & Thanh bên Sidebar
+         ======================================================= -->
+    <main class="site-content" id="home">
+        <div class="content-layout">
+
+            <!-- 3.1 Cột nội dung chính (Main Content - 70%) -->
+            <article class="main-content">
+                <div class="featured-article">
+                    <span class="article-tag">Tiêu điểm công nghệ</span>
+                    <h2 class="article-title">Phân Tích Bố Cục Website Template Hiện Đại và Kỹ Thuật Bố Trí Bằng HTML &amp; CSS</h2>
+                    
+                    <div class="article-meta">
+                        <span>Tác giả: <strong>dtc245200059</strong></span>
+                        <span>•</span>
+                        <span>Ngày đăng: 10/10/2026</span>
+                        <span>•</span>
+                        <span>Thời gian đọc: 5 phút</span>
+                    </div>
+
+                    <!-- Hình ảnh minh họa nội dung bài viết -->
+                    <img src="images/featured-article.jpg" alt="Minh họa cấu trúc website template hiện đại" class="article-image">
+
+                    <div class="article-body">
+                        <p>
+                            Trong thiết kế web hiện đại, việc phân tích và xây dựng cấu trúc trang web mẫu (Website Template) là nền tảng cốt lõi giúp các nhà phát triển tạo ra trải nghiệm người dùng trực quan, khoa học và dễ tiếp cận. Bố cục tiêu chuẩn của hầu hết các website chuyên nghiệp hiện nay đều bao gồm 4 khối thành phần chính: <strong>Header</strong>, <strong>Navigation Menu</strong>, <strong>Content Section</strong> và <strong>Footer</strong>.
+                        </p>
+                        <p>
+                            Mỗi thành phần đóng vai trò đặc thù: <em>Header</em> giúp định vị thương hiệu và tạo ấn tượng đầu tiên; <em>Navigation Menu</em> cung cấp lộ trình điều hướng thông suốt cho người xem; <em>Content Section</em> tập trung truyền tải giá trị thông tin thông qua việc kết hợp giữa văn bản mạch lạc và hình ảnh chất lượng cao; và cuối cùng là <em>Footer</em> giúp cố định thông tin pháp lý, bản quyền cùng các đường dẫn bổ trợ.
+                        </p>
+                        <p>
+                            Bằng cách áp dụng các nguyên lý sắp xếp cơ bản của <strong>CSS Flexbox</strong> và hệ thống chia cột thông minh, giao diện trang web không những hiển thị gọn gàng, tinh gọn mà còn tự động co giãn linh hoạt trên nhiều kích cỡ màn hình khác nhau từ máy tính để bàn (Desktop), máy tính bảng (Tablet) cho đến điện thoại thông minh (Mobile).
+                        </p>
+                    </div>
+
+                    <a href="#news" class="read-more-btn">Đọc tiếp toàn bộ bài viết &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 3.2 Cột thanh bên (Sidebar - 30%) -->
+            <aside class="sidebar">
+
+                <!-- Widget 1: Chuyên mục -->
+                <div class="widget">
+                    <h3 class="widget-title">Chuyên mục phổ biến</h3>
+                    <ul class="category-list">
+                        <li class="category-item">
+                            <a href="#">Kiến trúc Website Template</a>
+                            <span class="category-count">12</span>
+                        </li>
+                        <li class="category-item">
+                            <a href="#">HTML5 &amp; CSS3 Nâng cao</a>
+                            <span class="category-count">24</span>
+                        </li>
+                        <li class="category-item">
+                            <a href="#">Bố cục Flexbox &amp; Grid</a>
+                            <span class="category-count">18</span>
+                        </li>
+                        <li class="category-item">
+                            <a href="#">Tối ưu hóa UX/UI</a>
+                            <span class="category-count">09</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Widget 2: Bài viết đọc nhiều -->
+                <div class="widget">
+                    <h3 class="widget-title">Bài viết nổi bật</h3>
+                    <div class="trending-post">
+                        <img src="images/post-thumb.jpg" alt="Ảnh thumbnail bài viết" class="trending-thumb">
+                        <div class="trending-info">
+                            <h4><a href="#">Tối ưu hóa cấu trúc tệp trong dự án lập trình web</a></h4>
+                            <span>10 Tháng 10, 2026</span>
+                        </div>
+                    </div>
+                    <div class="trending-post">
+                        <img src="images/post-thumb.jpg" alt="Ảnh thumbnail bài viết" class="trending-thumb">
+                        <div class="trending-info">
+                            <h4><a href="#">Nguyên lý thiết kế giao diện sạch sẽ và dễ nhìn</a></h4>
+                            <span>08 Tháng 10, 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Widget 3: Bản tin -->
+                <div class="widget">
+                    <h3 class="widget-title">Đăng ký nhận tin</h3>
+                    <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px;">Nhận các bài phân tích thiết kế web mới nhất gửi vào hộp thư mỗi tuần.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký nhận tin!'); this.reset();">
+                        <input type="email" placeholder="Nhập địa chỉ email của bạn..." required>
+                        <button type="submit">Đăng ký ngay</button>
+                    </form>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- =======================================================
+         4. PHẦN FOOTER: Chứa thông tin bản quyền và liên kết phụ
+         ======================================================= -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <strong style="color: #ffffff; font-size: 1.1rem;">Tech Insights Blog</strong>
+                <p style="font-size: 0.85rem; margin-top: 5px;">Thực hành phân tích và xây dựng cấu trúc Website Template</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#news">Điều khoản dịch vụ</a></li>
+                <li><a href="#coding">Chính sách bảo mật</a></li>
+                <li><a href="#contact">Hỗ trợ kỹ thuật</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2026 Tech Insights. All rights reserved. | Thiết kế bởi học viên <strong>dtc245200059</strong></p>
+        </div>
+    </footer>
+
+</body>
+</html>
